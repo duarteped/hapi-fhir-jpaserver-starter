@@ -33,12 +33,12 @@ spring:
     enabled: false
     check-location: false
     baselineOnMigrate: true
-  datasource:
-    url: jdbc:h2:mem:test_mem
-    username: sa
-    password: null
-    driverClassName: org.h2.Driver
-    max-active: 15
+  # datasource:
+   # url: jdbc:h2:mem:test_mem
+    #username: sa
+    #password: null
+    #driverClassName: org.h2.Driver
+    #max-active: 15
 
     # database connection pool size
     hikari:
@@ -59,7 +59,7 @@ spring:
       # ca.uhn.fhir.jpa.model.dialect.HapiFhirSQLServerDialect
       # ca.uhn.fhir.jpa.model.dialect.HapiFhirMySQLDialect (Deprecated!)
       #########################################
-      hibernate.dialect: ca.uhn.fhir.jpa.model.dialect.HapiFhirH2Dialect
+      hibernate.dialect: # ca.uhn.fhir.jpa.model.dialect.HapiFhirH2Dialect
       #########################################
       #      hibernate.hbm2ddl.auto: update
       #      hibernate.jdbc.batch_size: 20
